@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class CalculadoraSimple {
 
@@ -13,14 +14,19 @@ public class CalculadoraSimple {
 		return a * b;
 	}
 
-	public static double dividir(int a, int b) {
+	public static double dividir(double a, double b) {
 		return a / b;
 	}
 
 	public static void main(String[] args) {
 
-		int a = 10;
-		int b = 3;
+		Scanner consola=new Scanner(System.in);
+		
+		System.out.println("Introduce variable a: ");
+		int a = consola.nextInt();consola.nextLine();
+
+		System.out.println("Introduce variable b: ");
+		int b = consola.nextInt();
 
 		System.out.println("a + b = " + sumar(a, b));
 		System.out.println("a - b = " + restar(a, b));
