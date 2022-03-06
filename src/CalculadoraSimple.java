@@ -20,20 +20,22 @@ public class CalculadoraSimple {
 
 	public static void main(String[] args) {
 
-		Scanner consola=new Scanner(System.in);
+		Scanner consola = new Scanner(System.in);
+
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Introduce variable a: ");
+			int a = consola.nextInt();
+			consola.nextLine();
+
+			System.out.println("Introduce variable b: ");
+			int b = consola.nextInt();
+
+			System.out.println("a + b = " + sumar(a, b));
+			System.out.println("a - b = " + restar(a, b));
+			System.out.println("a * b = " + multiplicar(a, b));
+			System.out.println("a / b = " + dividir(a, b));
+		}
 		
-		System.out.println("Introduce variable a: ");
-		int a = consola.nextInt();consola.nextLine();
-
-		System.out.println("Introduce variable b: ");
-		int b = consola.nextInt();
-
-		System.out.println("a + b = " + sumar(a, b));
-		System.out.println("a - b = " + restar(a, b));
-		System.out.println("a * b = " + multiplicar(a, b));
-		System.out.println("a / b = " + dividir(a, b));
-
 	}
 
 }
-
